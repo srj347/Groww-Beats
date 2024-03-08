@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_music"
+    app:startDestination="@id/musicHomeFragment">
+
+    <fragment
+        android:id="@+id/musicHomeFragment"
+        android:name="com.example.growwbeats.ui.screens.MusicHomeFragment"
+        android:label="fragment_music_home"
+        tools:layout="@layout/fragment_music_home" >
+        <action
+            android:id="@+id/action_musicHome_to_musicDetail"
+            app:destination="@id/musicDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/musicSearchFragment"
+        android:name="com.example.growwbeats.ui.screens.MusicSearchFragment"
+        android:label="fragment_music_search"
+        tools:layout="@layout/fragment_music_search" />
+    <fragment
+        android:id="@+id/artistDetailFragment"
+        android:name="com.example.growwbeats.ui.screens.ArtistDetailFragment"
+        android:label="fragment_artist_detail"
+        tools:layout="@layout/fragment_artist_detail" />
+    <fragment
+        android:id="@+id/albumDetailFragment"
+        android:name="com.example.growwbeats.ui.screens.AlbumDetailFragment"
+        android:label="fragment_album_detail"
+        tools:layout="@layout/fragment_album_detail" />
+    <fragment
+        android:id="@+id/playlistDetailFragment"
+        android:name="com.example.growwbeats.ui.screens.PlaylistDetailFragment"
+        android:label="fragment_playlist_detail"
+        tools:layout="@layout/fragment_playlist_detail" />
+    <fragment
+        android:id="@+id/musicDetailFragment"
+        android:name="com.example.growwbeats.ui.screens.MusicDetailFragment"
+        android:label="fragment_music_detail"
+        tools:layout="@layout/fragment_music_detail" >
+        <argument
+            android:name="KEY_URL"
+            app:argType="string" />
+    </fragment>
+</navigation>

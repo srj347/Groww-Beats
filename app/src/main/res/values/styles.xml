@@ -1,0 +1,45 @@
+<resources>
+    <style name="Widget.Theme.GrowwBeats.MyView" parent="">
+        <item name="android:background">@color/gray_400</item>
+        <item name="exampleColor">@color/light_blue_400</item>
+    </style>
+
+    <style name="HeadingBold">
+        <item name="android:textSize">@dimen/_16dp</item>
+        <item name="fontFamily">@font/encore_font_circular_bold</item>
+        <item name="android:textColor">@color/yellow_600</item>
+    </style>
+
+    <style name="HeadingItemMedium">
+        <item name="android:textSize">@dimen/_14dp</item>
+        <item name="fontFamily">@font/encore_font_circular_bold</item>
+        <item name="android:textColor">@color/yellow_600</item>
+    </style>
+
+    <style name="HeadingMedium">
+        <item name="android:textSize">@dimen/_16dp</item>
+        <item name="fontFamily">@font/br_cobane_medium</item>
+        <item name="android:textColor">@color/yellow_600</item>
+    </style>
+
+    <style name="ItemSmall">
+        <item name="android:textSize">@dimen/_14dp</item>
+        <item name="fontFamily">@font/br_cobane_medium</item>
+        <item name="android:textColor">@color/gray_400</item>
+    </style>
+
+    <style name="ItemDesc">
+        <item name="android:textSize">@dimen/_12dp</item>
+        <item name="fontFamily">@font/encore_font_circular_bold</item>
+        <item name="android:textColor">@color/gray_400</item>
+    </style>
+
+    <style name="SearchChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/color_search_chip_bg</item>
+        <item name="chipStrokeColor">@color/color_search_chip_stroke</item>
+        <item name="android:textColor">@color/color_search_chip_text</item>
+        <item name="chipStrokeWidth">1dp</item>
+    </style>
+
+    <dimen name="_12dp">12dp</dimen>
+</resources>
